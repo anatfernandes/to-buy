@@ -1,7 +1,15 @@
 body {
+	height: 100vh;
 	font-family: "Roboto", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
+	color: var(--black);
+	background: rgb(9, 0, 53);
+	background: linear-gradient(
+		0deg,
+		rgba(9, 0, 53, 1) 0%,
+		rgba(151, 148, 247, 1) 90%
+	);
 }
 
 * {
@@ -20,4 +28,22 @@ b {
 
 i {
 	font-style: italic;
+}
+
+#root {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	width: 90%;
+	max-width: 600px;
+	height: 400px;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 2.5em;
 }

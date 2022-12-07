@@ -1,0 +1,41 @@
+section {
+	padding: 30px 0 0;
+}
+
+form {
+	display: flex;
+}
+
+input {
+	width: 100%;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 7px -3px var(--dark-gray);
+	padding: 0 10px;
+	font-size: 16px;
+	color: var(--black);
+}
+
+input:focus {
+	outline: none;
+	box-shadow: 0 0 7px 0px var(--dark-gray);
+}
+
+input::placeholder {
+	font-style: italic;
+}
+
+form button {
+	margin: 0 0 0 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--light-blue);
+	color: var(--dark-gray);
+	box-shadow: 0 0 7px -2px var(--dark-blue);
+	cursor: pointer;
+}
+
+form button:hover {
+	filter: brightness(0.8);
+}
