@@ -1,0 +1,23 @@
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+* {
+	box-sizing: border-box;
+	--dark-blue: #090035;
+	--light-blue: #9794f7;
+	--black: #060606;
+	--white: #ffffff;
+	--dark-gray: #202020;
+	--light-gray: #d2d2d2;
+}
+
+b {
+	font-weight: 700;
+}
+
+i {
+	font-style: italic;
+}
