@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { ItemType } from "./List";
-
-type Dispatcher<S> = React.Dispatch<React.SetStateAction<S>>;
+import { Dispatcher, ItemType } from "./List";
 
 type InsertItemParams = {
 	items: ItemType[];
