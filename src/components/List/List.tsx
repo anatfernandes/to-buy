@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { InsertItem } from "./InsertItem";
+import { Item } from "./Item";
 import "./List.css";
 
 export type ItemType = {
@@ -14,6 +15,12 @@ export function List() {
 	return (
 		<section>
 			<InsertItem items={items} setItems={setItems} />
+
+			<ul>
+				{items.map(({ name, checked }, index) => (
+					<Item key={index} name={name} checked={checked} index={index} />
+				))}
+			</ul>
 		</section>
 	);
 }
