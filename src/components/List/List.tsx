@@ -11,19 +11,17 @@ export type ItemType = {
 export type Dispatcher<S> = React.Dispatch<React.SetStateAction<S>>;
 
 export function List() {
-	// inferência de tipo
 	const [items, setItems] = useState<ItemType[]>([]);
 
 	return (
 		<section>
-			<InsertItem items={items} setItems={setItems} />
+			<InsertItem setItems={setItems} />
 
 			<ul>
-				{items.map(({ name, checked }, index) => (
+				{items.map((item, index) => (
 					<Item
 						key={index}
-						name={name}
-						checked={checked}
+						{...item}
 						index={index}
 						items={items}
 						setItems={setItems}

@@ -2,17 +2,16 @@ import React, { useState } from "react";
 import { Dispatcher, ItemType } from "./List";
 
 type InsertItemParams = {
-	items: ItemType[];
 	setItems: Dispatcher<ItemType[]>;
 };
 
-export function InsertItem({ items, setItems }: InsertItemParams) {
+export function InsertItem({ setItems }: InsertItemParams) {
 	const [item, setItem] = useState("");
 
 	function addNewItem(event: React.FormEvent) {
 		event.preventDefault();
 
-		setItems([...items, { name: item, checked: false }]);
+		setItems((prev) => [...prev, { name: item, checked: false }]);
 	}
 
 	function updateNewItem(event: React.ChangeEvent<HTMLInputElement>) {
