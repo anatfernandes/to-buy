@@ -1,6 +1,8 @@
 # :shopping_cart: To Buy
 
  To Buy é uma página web feita para auxiliar as compras de supermercado.
+<br />
+**Nota:** esse projeto é uma PoC de React.js + Typescript.
 
 <div align=center>
   
